@@ -1,0 +1,213 @@
+<!doctype html>
+<html dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./styles.css" rel="stylesheet">
+  <title>سایت شهر غذا</title>
+</head>
+<body class="font-body">
+
+    <div class="grid md:grid-cols-4"> <!-- Start Wrapper -->
+
+        <div class="md:col-span-1 md:flex md:justify-end bg-gray-100"> <!-- Start Nav -->
+            <nav class="text-left">
+
+                <div class="flex justify-between items-center">
+                    <h1 class="font-bold uppercase p-4 hover:text-red-500">
+                        <a href="#">شهر غذا</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden md:show" id="burger-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </div>
+                </div>
+
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold py-1">
+                        <a class="flex px-4 border-l-4 border-primary" href="#">
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                            <span>
+                                خانه
+                            </span>
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a class="flex px-4 border-l-4 border-white" href="#">
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                            </svg>
+                            <span>
+                                تماس با ما
+                            </span>
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a class="flex px-4 border-l-4 border-white" href="#">
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                            </svg>
+                            <span>
+                                درباره ما
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div> <!-- End Nav -->
+
+        <main class="px-16 py-4 bg-gray-50 md:col-span-3">
+
+            <div class="flex justify-center md:justify-end"> <!-- Start Section for login and sign up -->
+                <a class="hover:bg-primary hover:text-white btn text-primary border-primary md:border-2 transition ease-out duration-500" href="#">
+                    ورود
+                </a>
+                <a class="hover:bg-primary hover:text-white btn text-primary mr-4 border-primary md:border-2 transition ease-out duration-500" href="#">
+                    ثبت نام
+                </a>
+            </div> <!-- End Section for login and sign up -->
+
+            <header class="mt-4">
+                <h2 class="font-semibold text-4xl">دستور پخت</h2>
+                <h3 class="font-semibold text-2xl pl-1 mt-4">برای همه</h3>
+            </header>
+
+            <div> <!-- Start Warpper for differnt Sections -->
+
+                <h4 class="font-bold mt-12 pb-2 border-b-4 border-gray-300">آخرین دستور های پحت</h4>
+                <div class="cards-wrapper"> <!-- Start Wrapper Cards of group 1 -->
+
+                    <div class="card"> <!-- Start Card 1 -->
+
+                        <img class="w-full h-32 sm:h-60 object-cover" src="./images/Ghorme.jpg" alt="قرمه سبزی" title="قرمه سبزی">
+
+                        <div class="flex flex-col m-2">
+                            <span>قرمه سبزی</span>
+                            <span class="text-sm text-gray-400">مهرانا توانمند</span>
+                        </div>
+
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>سه ساعت</span>
+                        </div>
+
+                    </div><!-- End Card 1 -->
+
+                    <div class="card"> <!-- Start Card 2 -->
+
+                        <img class="w-full h-32 sm:h-60 object-cover" src="./images/Gheymeh.jpg" alt="قیمه" title="قیمه">
+
+                        <div class="flex flex-col m-2">
+                            <span>قیمه</span>
+                            <span class="text-sm text-gray-400">مهرانا توانمند</span>
+                        </div>
+
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>دو ساعت</span>
+                        </div>
+
+                    </div><!-- End Card 2 -->
+
+                    <div class="card"> <!-- Start Card 3 -->
+
+                        <img class="w-full h-32 sm:h-60 object-cover" src="./images/kabab.jpg" alt="کباب" title="کباب">
+
+                        <div class="flex flex-col m-2">
+                            <span>کباب</span>
+                            <span class="text-sm text-gray-400">مهرانا توانمند</span>
+                        </div>
+
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>سی دقیقه</span>
+                        </div>
+
+                    </div><!-- End Card 3 -->
+
+                </div> <!-- End Wrapper Cards of gourp 1 -->
+
+                <h4 class="font-bold mt-12 pb-2 border-b-4 border-gray-300">محبوب ترین دستور های پخت</h4>
+                <div class="cards-wrapper"> <!-- Start Wrapper Cards of group 2 -->
+
+                    <div class="card"> <!-- Start Card 1 -->
+
+                        <img class="w-full h-32 sm:h-60 object-cover" src="./images/Ghorme.jpg" alt="قرمه سبزی" title="قرمه سبزی">
+
+                        <div class="flex flex-col m-2">
+                            <span>قرمه سبزی</span>
+                            <span class="text-sm text-gray-400">مهرانا توانمند</span>
+                        </div>
+
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>سه ساعت</span>
+                        </div>
+
+                    </div><!-- End Card 1 -->
+
+                    <div class="card"> <!-- Start Card 2 -->
+
+                        <img class="w-full h-32 sm:h-60 object-cover" src="./images/Gheymeh.jpg" alt="قیمه" title="قیمه">
+
+                        <div class="flex flex-col m-2">
+                            <span>قیمه</span>
+                            <span class="text-sm text-gray-400">مهرانا توانمند</span>
+                        </div>
+
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>دو ساعت</span>
+                        </div>
+
+                    </div><!-- End Card 2 -->
+
+                    <div class="card"> <!-- Start Card 3 -->
+
+                        <img class="w-full h-32 sm:h-60 object-cover" src="./images/kabab.jpg" alt="کباب" title="کباب">
+
+                        <div class="flex flex-col m-2">
+                            <span>کباب</span>
+                            <span class="text-sm text-gray-400">مهرانا توانمند</span>
+                        </div>
+
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>سی دقیقه</span>
+                        </div>
+
+                    </div><!-- End Card 3 -->
+
+                </div> <!-- End Wrapper Cards of group 2 -->
+
+                <div class="flex justify-center"> <!-- Start Wrapper for Button -->
+                    <div class="hover:shadow-inner active:border-2 hover:border-secondary-200 btn m-4 p-4 bg-secondary-100 text-secondary-200 transform hover:scale-125 hover:bg-opacity-50 transition-all ease-in-out duration-300">بارگیری بیشتر</div>
+                </div> <!-- End Wrapper for Button -->
+
+
+            </div> <!-- End Warpper for differnt Sections -->
+
+        </main>
+
+    </div> <!-- End Wrapper -->
+
+    <script src="./jquery.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

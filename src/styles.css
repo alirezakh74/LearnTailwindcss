@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+    font-family: vazir;
+    src: url('fonts/Vazir.ttf');
+}
+
+@tailwind utilities;
+
+
+.cards-wrapper {
+    @apply mt-8 grid lg:grid-cols-3 gap-10
+}
+
+.card {
+    @apply hover:shadow-2xl bg-white rounded overflow-hidden shadow-md relative
+}
+
+.badge {
+    @apply bg-secondary-100 text-gray-800 text-xs rounded-full absolute top-0 p-2 mt-2 mr-2
+}
+
+
+.btn {
+    @apply rounded-lg py-2 px-3 text-xs font-bold cursor-pointer
+}
